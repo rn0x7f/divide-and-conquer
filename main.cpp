@@ -1,6 +1,3 @@
-// A01799387 Renato García Morán
-// A01750996 Vicente Jesús Ramos Chávez
-// A01751213 Ignacio Solís Montes 
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -72,12 +69,16 @@ void solve(std::vector<double>& values, int& n) {
 
 int main() {
   std::cout << "Numero de casos de prueba: ";
-  int t; std::cin >> t; std::cout << std::endl; // Casos de prueba
+  int t;
+  std::cin >> t;
+  std::cout << std::endl; // Casos de prueba
   int c = 1; // Caso inicial
   while(t--){ // Ejecutar los casos de prueba
     std::cout << "Caso de prueba " << c++ << ":" << std::endl; // Imprime e incrementa el caso de prueba
     std::cout << "Ingrese el número de valores a ordenar: ";
-    int n; std::cin >> n; std::cout << std::endl; 
+    int n; 
+    std::cin >> n;
+    std::cout << std::endl; 
     std::cout << "Ingrese " << n << " valores (reales o enteros), uno por línea:" << std::endl;
     std::vector<double> values(n);
     for(int i = 0; i < n; i++) std::cin >> values[i]; // Leer los valores
