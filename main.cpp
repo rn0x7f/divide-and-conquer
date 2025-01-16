@@ -1,14 +1,21 @@
-/*
- * @file main.cpp
- * @brief Divide and conquer implementation.
+ /*
+ * SonarQube, open source software quality management tool.
+ * Copyright (C) 2008-2013 SonarSource
+ * http://github.com/SonarOpenCommunity/sonar-cxx
  *
- * @details This file contains the implementation of the merge sort algorithm.
- *          It divides an array recursively and merges it in sorted order.
+ * SonarQube is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 3 of the License, or (at your option) any later version.
  *
- * @author Renato
- * @date 2025-01-15
- * @note This file is provided without a specific license. All rights are reserved
- *       unless otherwise stated.
+ * SonarQube is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 #include <iostream>
 #include <vector>
