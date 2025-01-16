@@ -1,14 +1,3 @@
-/**
- * @file main.cpp
- * @brief Implementation of merge sort algorithm.
- *
- * @copyright Copyright (C) 2025
- * @license This software is provided "as-is," without warranty of any kind.
- *          Permission to use, copy, modify, and distribute this software for
- *          any purpose is hereby granted without fee.
- *
- * @date 2025-01-15
- */
 #include <iostream>
 #include <vector>
 #include <algorithm>
