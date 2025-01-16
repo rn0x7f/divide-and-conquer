@@ -14,10 +14,6 @@
 #include <vector>
 #include <algorithm>
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-
 // Función para fusionar dos subvectores en orden descendente
 void merge(std::vector<double>& arr, int left, int mid, int right) {
     int n1 = mid - left + 1;
