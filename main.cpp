@@ -1,3 +1,19 @@
+/**
+ * @file main.cpp
+ * @brief Divide and conquer implementation.
+ *
+ * @details This file contains the implementation of the merge sort algorithm.
+ *          It divides an array recursively and merges it in sorted order.
+ *
+ * @author Renato
+ * @date 2025-01-15
+ * @note This file is provided without a specific license. All rights are reserved
+ *       unless otherwise stated.
+ */
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -46,13 +62,13 @@ void merge(std::vector<double>& arr, int left, int mid, int right) {
 }
 
 // Función recursiva para dividir y ordenar el vector
-void mergeSort(std::vector<double>& arr, int left, int right) {
+void merge_sort(std::vector<double>& arr, int left, int right) {
     if (left < right) {
         int mid = left + (right - left) / 2;
 
         // Dividir
-        mergeSort(arr, left, mid);
-        mergeSort(arr, mid + 1, right);
+        merge_sort(arr, left, mid);
+        merge_sort(arr, mid + 1, right);
 
         // Conquistar
         merge(arr, left, mid, right);
@@ -60,7 +76,7 @@ void mergeSort(std::vector<double>& arr, int left, int right) {
 }
 
 void solve(std::vector<double>& values, int& n) {
-    mergeSort(values, 0, n - 1); // Ordenar usando MergeSort en orden descendente
+    merge_sort(values, 0, n - 1); // Ordenar usando merge_sort en orden descendente
     std::cout << "Resultado:\nValores ordenados de mayor a menor:" << std::endl;
     for (int i = 0; i < n; i++) std::cout << values[i] << " "; // Imprimir los valores ordenados
     std::cout << std::endl;
